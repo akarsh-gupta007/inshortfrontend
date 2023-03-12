@@ -17,19 +17,19 @@ const SideNavBar = () => {
       <span  onClick={openNav}>&#9776; </span>
       <div id="mySidenav" className="sidenav">
        
-        <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
+        <div  className="closebtn" onClick={closeNav}>&times;</div>
         Categories
         <hr/>
         
-        <a href="#">All News</a>
-        <a href="#">India</a>
-        <a href="#">Business</a>
-        <a href="#">Sports</a>
-        <a href="#">World</a>
-        <a href="#">Startup</a>
-        <a href="#">Science</a>
-        <a href="#">Automobile</a>
-        <a href="#">Politics</a>
+        <div >All News</div>
+        <div >India</div>
+        <div >Business</div>
+        <div >Sports</div>
+        <div >World</div>
+        <div >Startup</div>
+        <div >Science</div>
+        <div >Automobile</div>
+        <div >Politics</div>
         
       </div>
     </>

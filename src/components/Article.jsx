@@ -87,7 +87,7 @@ const Article = ({ article}) => {
                         </Author>
                         <Description>{article.description}</Description>
                         <Publisher>
-                            read more at <a href={article.link} target='_blank'>{article.publisher}</a>
+                            read more at <a href={article.link} target="blank">{article.publisher}</a>
                         </Publisher>
                     </RightContainer>
                 </Grid>

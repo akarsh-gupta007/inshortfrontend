@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getNews } from "../service/api";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -24,7 +24,7 @@ const Indivedual = () => {
     <div className="single__page">
       {data
         .filter((n) => {
-          return n._id == id;
+          return n._id ===id;
         })
         .map((item) => {
           return (

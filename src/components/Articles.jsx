@@ -10,20 +10,20 @@ const Articles = () => {
 
     const [news, setNews] = useState([]);
     const [page, setPage] = useState(0);
+    console.log(page)
 
     useEffect(() => {
         const dailyNews = async () => {
-            const response = await getNews(page);
-            // console.log(response,"response")
-            // console.log(new Set([...news, ...response.data]));
+            const response = await getNews();
+
             setNews([...new Set([...news, ...response.data])]);
         }
         dailyNews();
-    }, [page])
-
-    useEffect(() => {
-        console.log(news);
     }, [news])
+
+    // useEffect(() => {
+    //     console.log(news);
+    // }, [news])
 
     return (
         <InfiniteScroll
@@ -39,5 +39,4 @@ const Articles = () => {
         </InfiniteScroll>
     )
 }
-
 export default Articles;
