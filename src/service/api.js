@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export const getNews = async () => {
     try {
-        const a=await axios.get('https://inshortbackend.onrender.com/news?page=0&size=25')
+        const a=await axios.get('https://inshortbackend.onrender.com/news?page=0&size=5')
         console.log(a)
         return a;
         
