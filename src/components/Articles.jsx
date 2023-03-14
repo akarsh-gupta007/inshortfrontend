@@ -9,11 +9,14 @@ const Articles = () => {
     console.log(page)
     // const [data,setData]=useState(news)
 
-    useEffect(async() => {
+    useEffect(() => {
+        const detail=async()=>{
             const response = await getNews();
             setNews([...response.data])
             console.log(response.data,"response")
             
+        }
+        detail()
     }, [])
 
     const loadmore=async()=>{
